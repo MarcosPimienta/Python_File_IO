@@ -3,20 +3,17 @@ import random
 from pathlib import Path
 
 
-def generate_logs():
+def generate_logs(log_file: Path, number_logs: int):
 
     log_levels = ['INFO', 'WARNING', 'DEBUG', 'ERROR', 'CRITICAL']
     log_messages = ['System started', 'Process completed successfully',
                     'An error occurred']
 
-    number_logs = 1000
     path = Path('logs')
 
     if not path.exists():
         print(f'Creating directory {str(path)}...')
         path.mkdir(parents=True, exist_ok=True)
-
-    log_file = path / 'mylogfile.log'
 
     with log_file.open('a', encoding="utf-8") as file:
         for _ in range(number_logs):
