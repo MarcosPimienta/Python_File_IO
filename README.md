@@ -1,4 +1,5 @@
 # Python_File_IO
+![README_Title](https://github.com/MarcosPimienta/Python_File_IO/assets/60362847/9b6fd5f5-e2fb-43da-80a3-3954a6685b9b)
 
 The Python_File_IO project contains a collection of scripts that generate and analyze log files. The project has three main Python scripts:
 
